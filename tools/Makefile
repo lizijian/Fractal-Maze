@@ -5,7 +5,7 @@ CC=g++
 SRC2=AnalyzeMaze/AnalyzeMaze.cpp AnalyzeMaze/scanMaze.cpp AnalyzeMaze/util.cpp
 #crack maze
 CRACKMAZE_SRC= CrackMaze/CrackMazeMain.cpp CrackMaze/CrackMaze.cpp
-#CPPFLAGS += -g
+CPPFLAGS += -O2
 
 #analyze maze
 LIBSCANMAZE_OBJ=$(addsuffix .o,$(basename $(LIBSCANMAZE_SRC)))
