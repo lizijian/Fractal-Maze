@@ -59,7 +59,7 @@ private:
     int numPin, resolution;
 
     ////abstract infomation through analysis
-    ContourSet subMazeContour,potentialPoles,crossPoints;
+    ContourSet subMazeContour,potentialPoles,junctionPoints;
     //poles contour
     Contour cathode, anode;
     //detected pin set, main = 0, sub maze = 1,2...

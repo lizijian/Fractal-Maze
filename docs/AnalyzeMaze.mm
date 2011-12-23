@@ -14,8 +14,7 @@
       <img src="AnalyzeMaze-images/1.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -31,8 +30,7 @@
       <img src="AnalyzeMaze-images/2.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -55,8 +53,7 @@
       <img src="AnalyzeMaze-images/9.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -82,8 +79,7 @@
       <img src="AnalyzeMaze-images/3.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -98,8 +94,7 @@
       <img src="AnalyzeMaze-images/10.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -121,8 +116,7 @@
       <img src="AnalyzeMaze-images/4.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -139,8 +133,7 @@
       <img src="AnalyzeMaze-images/5.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -160,8 +153,7 @@
       <img src="AnalyzeMaze-images/6.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -177,8 +169,7 @@
       <img src="AnalyzeMaze-images/8.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -194,8 +185,7 @@
       <img src="AnalyzeMaze-images/7.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -210,8 +200,7 @@
       <img src="AnalyzeMaze-images/11.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -227,7 +216,7 @@
 </node>
 <node CREATED="1324542504609" ID="ID_1383166473" MODIFIED="1324542530171" TEXT="track wire">
 <node CREATED="1324542837765" ID="ID_787240227" MODIFIED="1324542843421" TEXT="color image">
-<node CREATED="1324542919953" ID="ID_1394264550" MODIFIED="1324542967296" TEXT="no cross point sign">
+<node CREATED="1324542919953" ID="ID_1394264550" MODIFIED="1324607493937" TEXT="no crossing and junction wires sign">
 <node CREATED="1324542980375" ID="ID_1290770139" MODIFIED="1324542989765" TEXT="step by step">
 <node CREATED="1324543069546" ID="ID_187443434" MODIFIED="1324543095140" TEXT="step = line width">
 <node CREATED="1324548928609" ID="ID_845296027" MODIFIED="1324550507984">
@@ -240,12 +229,11 @@
       <img src="AnalyzeMaze-images/12.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
-<node CREATED="1324543026687" ID="ID_1871866825" MODIFIED="1324543059500" TEXT="cross point test on each step">
+<node CREATED="1324543026687" ID="ID_1871866825" MODIFIED="1324607552328" TEXT="junction connection test on each step">
 <node CREATED="1324543101281" ID="ID_1599373203" MODIFIED="1324543346078" TEXT="test 2 orthometric directions"/>
 <node CREATED="1324543131937" ID="ID_1304931876" MODIFIED="1324543333562" TEXT="color break = break out of line = no cross line in this direction"/>
 <node CREATED="1324543181250" ID="ID_465576308" MODIFIED="1324543287234" TEXT="no color break = there is a cross line in this direction"/>
@@ -259,14 +247,13 @@
       <img src="AnalyzeMaze-images/13.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
 </node>
 <node CREATED="1324542827812" ID="ID_1190656996" MODIFIED="1324542836562" TEXT="binary image">
-<node CREATED="1324543357703" ID="ID_261040908" MODIFIED="1324543375328" TEXT="cross sign or noncross sign">
+<node CREATED="1324543357703" ID="ID_261040908" MODIFIED="1324607503687" TEXT="crossing and junction wires sign">
 <node CREATED="1324543376531" ID="ID_1583013978" MODIFIED="1324543408781" TEXT="move forward until color break">
 <node CREATED="1324543413843" ID="ID_1206919344" MODIFIED="1324543474531" TEXT="corner">
 <node CREATED="1324543503968" ID="ID_152058159" MODIFIED="1324543554515" TEXT="1break in neighborhood(forward)">
@@ -280,8 +267,7 @@
       <img src="AnalyzeMaze-images/14.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1324543744468" ID="ID_256200400" MODIFIED="1324543752328" TEXT="test left and right"/>
@@ -298,8 +284,7 @@
       <img src="AnalyzeMaze-images/15.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1324543754984" ID="ID_1163858819" MODIFIED="1324543779859" TEXT="test l/r and front"/>
@@ -316,8 +301,7 @@
       <img src="AnalyzeMaze-images/16.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1324543781734" ID="ID_1787912507" MODIFIED="1324543802781" TEXT="skip breaks and test front"/>
@@ -334,8 +318,7 @@
       <img src="AnalyzeMaze-images/17.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1324543711546" ID="ID_420434739" MODIFIED="1324543726375" TEXT="action = corner"/>
@@ -361,8 +344,7 @@
       <img src="AnalyzeMaze-images/18.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1324549432703" ID="ID_605749538" MODIFIED="1324550566515" TEXT="binary image">
@@ -376,8 +358,7 @@
       <img src="AnalyzeMaze-images/19.jpg" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>

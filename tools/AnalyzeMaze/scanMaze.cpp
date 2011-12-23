@@ -165,13 +165,13 @@ int ScanMaze::detectSubMaze(){
             
             potentialPoles.push_back(approx);
         }
-        //find potential cross point contour
-        if(area < 16 //small
-           && approx.size()>3 //not 2d
-           && closelyRegular(approx, 0.5) //more regular rather than long and narrow
-            ){
-            crossPoints.push_back(approx);   
-        }
+        ////find potential junction connection point contour
+        //if(area < 16 //small
+        //   && approx.size()>3 //not 2d
+        //   && closelyRegular(approx, 0.5) //more regular rather than long and narrow
+        //    ){
+        //    junctionPoints.push_back(approx);   
+        //}
     }
     removeRedundantContour(subMazeContour);
     return 0;
@@ -367,7 +367,7 @@ int ScanMaze::checkPossibleNextC(Mat& img, list<PointAndStep>& q,
             q.push_back(PointAndStep(next, possibleStep));
             continue;
         }
-        //cross point, track the original step
+        //crossing point, track the original step
         if (c != 'D'){
             if (sequence != 2)
                 continue;
@@ -415,13 +415,13 @@ int ScanMaze::checkPossibleNextG(Mat& img, list<PointAndStep>& q){
     if (!findGrayBreak(img, it, end))
         return -1;
     p3 = it.pos() - step;
-    //cross point
+    //jucntion point
     if (DIST(p3, p2) > wireWidth){
         for (int sequence = 0; sequence < 5;sequence+=2){//test left,front,right
             Point possibleStep = getNextStep(q.front().second, sequence);
-            //(p2 + p1) * 0.5 = center of cross point
+            //(p2 + p1) * 0.5 = center of jucntion point
             //DIST(p1, p2) = diameter of corss point circle
-            //change direction and jump out of cross point
+            //change direction and jump out of jucntion point
             Point next = (p2 + p1)* 0.5 + DIST(p1,p2) * possibleStep;
             char c = getGrayLevel(img, next);
             if (c == 0)
@@ -433,7 +433,7 @@ int ScanMaze::checkPossibleNextG(Mat& img, list<PointAndStep>& q){
     if (!findGrayBreak(img, it, end))
         return -1;
     p4 = it.pos();
-    //non-cross point
+    //crossing point
     if (DIST(p1,p4)< wireWidth *3){
         q.push_back(PointAndStep(p4, step));
         return 1;
