@@ -17,18 +17,21 @@ CRACKMAZE_OBJ=$(addsuffix .o,$(basename $(CRACKMAZE_SRC)))
 TARGET=AnalyzeMaze CrackMaze
 
 
-#opencv
-#ifdef opencv
+ifeq ($(OSNAME), Linux) 
+#windows
 INC += -I'F:/opencv2.3/build//include'
 INC += -I'F:/opencv2.3/build/include/opencv'
 #LIBS += -L'C:/opencv/build/x86/mingw/bin' -L.
 LIBS += -L'F:/opencv2.3/build/x86/mingw/bin' -L.
 #LIBS += -L'C:/opencv-2.3.0/mingw/install/bin'
-LIBS += -lopencv_core230 -lopencv_highgui230 -l opencv_imgproc230 -lopencv_contrib230
-LIBS += -lopencv_features2d230 -lopencv_flann230 -lopencv_gpu230 -lopencv_legacy230
-LIBS += -lopencv_ml230 -lopencv_objdetect230 -lopencv_video230 
-LIBS += -lopencv_calib3d230
-#endif
+LIBS += -lopencv_core230 -lopencv_highgui230 -l opencv_imgproc230
+else
+#linux
+INC += -I'/usr/local/include'
+LIBS += -L'/usr/local/lib' -L.
+LIBS += -lopencv_core -lopencv_highgui -lopencv_imgproc
+endif
+#
 CPPFLAGS+=$(INC)
 LDFLAGS+=$(LIBS)
 
