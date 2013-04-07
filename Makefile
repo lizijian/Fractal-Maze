@@ -17,14 +17,14 @@ CRACKMAZE_OBJ=$(addsuffix .o,$(basename $(CRACKMAZE_SRC)))
 TARGET=AnalyzeMaze CrackMaze
 
 
-ifeq ($(OSNAME), Linux) 
+ifneq ($(OSNAME), Linux) 
 #windows
-INC += -I'F:/opencv2.3/build//include'
-INC += -I'F:/opencv2.3/build/include/opencv'
+INC += -I'F:/opencv/build//include'
+INC += -I'F:/opencv/build/include/opencv'
 #LIBS += -L'C:/opencv/build/x86/mingw/bin' -L.
-LIBS += -L'F:/opencv2.3/build/x86/mingw/bin' -L.
+LIBS += -L'F:/opencv/build/x86/mingw/bin' -L.
 #LIBS += -L'C:/opencv-2.3.0/mingw/install/bin'
-LIBS += -lopencv_core230 -lopencv_highgui230 -l opencv_imgproc230
+LIBS += -lopencv_core244 -lopencv_highgui244 -l opencv_imgproc244
 else
 #linux
 INC += -I'/usr/local/include'
