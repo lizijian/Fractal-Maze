@@ -266,7 +266,7 @@ bool isOrthoContour(Contour& c, double error){
     // (all angles are ~90 degree) then write quandrange
     // vertices to resultant sequence
     if( maxCosine > error )//<5% diviation, cos(90*0.95)=0.0784
-        false;
+        return false;
     
     return true;
 }
